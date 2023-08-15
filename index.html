@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Case Study Between Google Lens And MobileNet</title>
+          <link rel="stylesheet" href="style.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+          <style>
+                    div {
+                              display: flex;
+                              align-items: center;
+                              justify-content: center;
+                    }
+
+                    img {
+                              height: 100px;
+                              align-items: center;
+                    }
+
+                    .heading {
+                              font-size: 20px;
+                    }
+
+                    .line {
+                              position: relative;
+                              margin: 20px 0;
+                              height: 1px;
+                              background-color: lightgray;
+                    }
+
+                    .test_image_and_result
+                    {
+                              background-color: grey;
+                              height: 400px;
+                              margin: 0 20px;
+                              width: 90%;
+                              justify-content: center;
+                              border-radius: 12px;
+                    }
+
+                    .bottle_img
+                    {
+                              height: 200px;
+                    }
+
+                    .google_lens_1
+                    {
+                              background-color: white;
+                              line-height: 3;
+                              border-radius: 15px;
+                              width: 28%;
+                              font-size: 18px;
+                    }
+
+                    .mobileNet_1
+                    {
+                              background-color: white;
+                              line-height: 3;
+                              border-radius: 15px;
+                              width: 25%;
+                              font-size: 18px;
+                    }
+
+                    .google_lens_word , .mobileNet_word
+                    {
+                              color: red;
+                    }
+          </style>
+</head>
+
+<body>
+          <center>
+                    <h1>CASE STUDY BETWEEN:-</h1>
+                    <div class="google_lens">
+                              <h3>Google Lens</h3>
+                              <img src="google lens.png">
+                    </div>
+                    <h5 style="color: red;">VS</h5>
+                    <br>
+                    <h3 class="btn btn-primary heading">MobileNet</h3>
+                    <div class="line"></div>
+                    <br>
+
+                    <ol style="font-size: 20px;">
+                              <div class="test_image_and_result col-xs-12">
+                                        <li class="col-sm-4 col-xs-10">
+                                                  <b>Test Image -</b>
+                                                  <img src="bottle.jpeg" class="img-responsive bottle_img">
+                                        </li>
+
+                                        <h5 class="col-sm-4 col-xs-12 google_lens_1">Output On <b class="google_lens_word">GOOGLE LENS</b>-
+                                        <span>Water Bottle</span>
+                                        </h5>
+
+                                        <h5 class="col-sm-4 col-xs-12 mobileNet_1">
+                                                  Output On <b class="mobileNet_word">MobileNet</b>-
+                                                  <span>Glass Bottle</span>
+                                        </h5>
+                                        
+                                        <div class="mini_result" class="col-xs-12">
+                                                  <h4>Result -</h4>
+                                                  <hr>
+                                                  <h4>Google Lens Is More Accurate</h4>
+                                        </div>
+                              </div>
+                              <br>
+                    </ol>
+
+          </center>
+</body>
+
+</html>
